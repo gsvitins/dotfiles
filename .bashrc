@@ -81,6 +81,7 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline 
 
 export EDITOR=vim
+export VISUAL=vim
 export TERM=xterm-256color
 set -o vi
 
