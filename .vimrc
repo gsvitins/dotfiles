@@ -40,6 +40,8 @@ set showmode
 nnoremap <F5> <esc>:w<enter>:!%:p<enter>
 inoremap <F5> <esc>:w<enter>:!%:p<enter>
 
+nnoremap <F10> :NERDTreeToggle<CR>
+
 " plugin stuff
 call pathogen#infect()
 call pathogen#helptags()
@@ -48,3 +50,7 @@ filetype plugin indent on
 syntax on
 
 let g:airline#extensions#tabline#enabled = 1
+
+" syntastic stuff
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
