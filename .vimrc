@@ -1,7 +1,6 @@
 set t_Co=256
 colorscheme wombat256i
 syntax on
-
 set laststatus=2
 set background=dark
 set tabstop=4
@@ -29,8 +28,6 @@ set cursorline
 set list
 set listchars=tab:→\ ,trail:·,nbsp:·
 
-filetype indent plugin on
-
 " toggle paste mode
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
@@ -43,5 +40,11 @@ set showmode
 nnoremap <F5> <esc>:w<enter>:!%:p<enter>
 inoremap <F5> <esc>:w<enter>:!%:p<enter>
 
-execute pathogen#infect()
+" plugin stuff
+call pathogen#infect()
+call pathogen#helptags()
+
+filetype plugin indent on
+syntax on
+
 let g:airline#extensions#tabline#enabled = 1
