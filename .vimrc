@@ -42,24 +42,31 @@ inoremap <F5> <esc>:w<enter>:!%:p<enter>
 
 nnoremap <F10> :NERDTreeToggle<CR>
 
-" plugin stuff
+" pathogen
 call pathogen#infect()
 call pathogen#helptags()
 
-filetype plugin indent on
-syntax on
+" vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'bling/vim-airline'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'nvie/vim-flake8'
+call vundle#end()
 
+" vim-airline
 let g:airline#extensions#tabline#enabled = 1
 
 " syntastic stuff
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" vim-airline stuff
-let g:airline#extensions#tabline#enabled = 1
-set laststatus=2
 
-
-
+filetype plugin indent on
+syntax on
 
 
