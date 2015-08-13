@@ -54,3 +54,12 @@ let g:airline#extensions#tabline#enabled = 1
 " syntastic stuff
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" vim-airline stuff
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+
+
+
+
+
