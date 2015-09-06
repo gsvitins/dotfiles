@@ -1,0 +1,1 @@
+/home/vagrant/git/dotfiles/.vim
