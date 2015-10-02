@@ -11,9 +11,10 @@ fi
 ln -sf $PWD/.vim ~/.vim
 ln -sf $PWD/.vimrc ~/.vimrc
 ln -sf $PWD/.bashrc ~/.bashrc
+ln -sf $PWD/.tmux.conf ~/.bashrc
 
 # Install Vundle for vim
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim > /dev/null
 
 echo "Installation complete!"
 echo "Please start vim and run ':PluginInstall' command to install all plugins"
