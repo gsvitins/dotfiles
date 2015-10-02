@@ -11,7 +11,7 @@ fi
 ln -sf $PWD/.vim ~/.vim
 ln -sf $PWD/.vimrc ~/.vimrc
 ln -sf $PWD/.bashrc ~/.bashrc
-ln -sf $PWD/.tmux.conf ~/.bashrc
+ln -sf $PWD/.tmux.conf ~/.tmux.conf
 
 # Install Vundle for vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
