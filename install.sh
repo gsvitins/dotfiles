@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 
-# Check if git is installed
+# check if git is installed
 if [ ! -x "/usr/bin/git" ]; then
-    echo "You need to install git in order to continue with dotfiles installation"
+    echo "You need to install git to continue with dotfiles installation!"
+    exit 1
+fi
+
+# check if install.sh is run from same dir
+if [ ! -x $PWD/install.sh ]; then
+    echo "You need to run install.sh script from the same dir!"
+    exit 1
 fi
 
 echo -n "Deleting already deployed Vundle plugins..."
@@ -24,5 +31,3 @@ echo "done!"
 vim -c "PluginInstall"
 
 echo "Installation complete!"
-
-
