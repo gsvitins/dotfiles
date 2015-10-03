@@ -7,7 +7,7 @@ if [ ! -x "/usr/bin/git" ]; then
 fi
 
 # check if install.sh is run from same dir
-if [ ! -x $PWD/install.sh ]; then
+if [ ! -x "$PWD/install.sh" ]; then
     echo "You need to run install.sh script from the same dir!"
     exit 1
 fi
