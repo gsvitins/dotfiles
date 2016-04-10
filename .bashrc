@@ -53,6 +53,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias ks='ls --color=auto'
 fi
 
+alias vi='vim'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
