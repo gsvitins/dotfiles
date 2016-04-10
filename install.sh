@@ -28,6 +28,6 @@ echo -n "Install Vundle (vim plugin manager)..."
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim &> /dev/null
 echo "done!"
 
-vim -c "PluginInstall"
+vim +PluginInstall +qall
 
 echo "Installation complete!"
