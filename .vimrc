@@ -42,7 +42,14 @@ set showmode
 nnoremap <F5> <esc>:w<enter>:!%:p<enter>
 inoremap <F5> <esc>:w<enter>:!%:p<enter>
 
+" bind NERDTree plugin
 nnoremap <F10> :NERDTreeToggle<CR>
+
+" bind tabs and windows
+map <C-J> :bnext<CR>
+map <C-K> :bprev<CR>
+map <C-L> :tabn<CR>
+map <C-H> :tabp<CR>
 
 " pathogen
 call pathogen#infect()
@@ -70,5 +77,4 @@ let g:syntastic_check_on_wq = 0
 
 filetype plugin indent on
 syntax on
-
 
