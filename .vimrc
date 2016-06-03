@@ -15,6 +15,7 @@ set noswapfile
 set autoindent
 set smarttab
 set number
+set colorcolumn=80
 
 " ignore case when searching
 set ignorecase
@@ -74,6 +75,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"change color of colorcolumn                                                    
+highlight ColorColumn ctermbg=233
 
 filetype plugin indent on
 syntax on
