@@ -64,7 +64,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
-Plugin 'chase/vim-ansible-yaml'
+Plugin 'pearofducks/ansible-vim'
 Plugin 'nvie/vim-flake8'
 call vundle#end()
 
