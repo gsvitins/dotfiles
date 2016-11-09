@@ -23,7 +23,6 @@ ln -sf $PWD/.bashrc ~/.bashrc
 ln -sf $PWD/.tmux.conf ~/.tmux.conf
 ln -sf $PWD/.tmux ~/.tmux
 ln -sf $PWD/.inputrc ~/.inputrc
-ln -sf $PWD/.ssh/config ~/.ssh/config
 echo "done!"
 
 echo -n "Install Vundle (vim plugin manager)..."
