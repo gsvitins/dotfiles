@@ -51,6 +51,9 @@ map <C-J> :bnext<CR>
 map <C-K> :bprev<CR>
 map <C-L> :tabn<CR>
 map <C-H> :tabp<CR>
+map <C-t> :tabnew <Enter>
+map <c-w> :close <Enter>
+map <C-W> :q! <Enter>
 
 " pathogen
 call pathogen#infect()
