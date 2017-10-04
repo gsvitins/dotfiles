@@ -47,13 +47,12 @@ inoremap <F5> <esc>:w<enter>:!%:p<enter>
 nnoremap <F10> :NERDTreeToggle<CR>
 
 " bind tabs and windows
-map <C-J> :bnext<CR>
-map <C-K> :bprev<CR>
-map <C-L> :tabn<CR>
-map <C-H> :tabp<CR>
-map <C-t> :tabnew <Enter>
-map <c-w> :close <Enter>
-map <C-W> :q! <Enter>
+nmap <C-J> :bprev<CR>
+nmap <C-K> :bnext<CR>
+nmap <C-L> :tabn<CR>
+nmap <C-H> :tabp<CR>
+nmap <C-t> :e<Space>
+nmap <c-w> :bd<CR>
 
 " pathogen
 call pathogen#infect()
