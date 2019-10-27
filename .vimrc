@@ -80,5 +80,8 @@ let g:syntastic_check_on_wq = 0
 filetype plugin indent on
 syntax on
 
-"change color of colorcolumn
+" change color of colorcolumn
 highlight ColorColumn ctermbg=233
+
+" scpecific filetype stuff
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
