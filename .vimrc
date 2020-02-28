@@ -68,7 +68,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'nvie/vim-flake8'
-Plugin 'stephy/vim-yaml'
+Plugin 'stephpy/vim-yaml'
 call vundle#end()
 
 " vim-airline
