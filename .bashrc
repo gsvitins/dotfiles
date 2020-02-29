@@ -88,5 +88,3 @@ set -o vi
 
 # disables ctrl+s (xon/xoff) functionality
 stty -ixon
-
-
