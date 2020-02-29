@@ -86,6 +86,7 @@ export VISUAL=vim
 export TERM=xterm-256color
 set -o vi
 
-
+# disables ctrl+s (xon/xoff) functionality
+stty -ixon
 
 
